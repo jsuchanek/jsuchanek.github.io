@@ -342,11 +342,20 @@ section {
   justify-content: space-around;
 }
 
-article {
+/* article {
   display: flex;
   width: 10rem;
   justify-content: space-around;
   gap: 0.5rem;
+} */
+
+article {
+  flex: 0 1 30%; /* Adjust the width of each article */
+  max-width: 300px; /* Set a maximum width to prevent overlapping */
+  padding: 1rem; /* Add padding for spacing */
+  border: 1px solid rgb(163, 163, 163); /* Add border for visual separation */
+  border-radius: 1rem; /* Add border radius for rounded corners */
+  text-align: center; /* Center text */
 }
 
 article .icon {
@@ -429,4 +438,8 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.small-text {
+  font-size: 12px;
 }
